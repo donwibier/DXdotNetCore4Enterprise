@@ -1,0 +1,12 @@
+C:\git\DXdotNetCore4Enterprise\bin\Debug\netcoreapp2.0\app.db
+C:\git\DXdotNetCore4Enterprise\bin\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.deps.json
+C:\git\DXdotNetCore4Enterprise\bin\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.runtimeconfig.json
+C:\git\DXdotNetCore4Enterprise\bin\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.runtimeconfig.dev.json
+C:\git\DXdotNetCore4Enterprise\bin\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.dll
+C:\git\DXdotNetCore4Enterprise\bin\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.pdb
+C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.csproj.CoreCompileInputs.cache
+C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.AssemblyInfoInputs.cache
+C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.AssemblyInfo.cs
+C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.dll
+C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.pdb
