@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DXdotNetCore4Enterprise.Models;
+using DXdotNETCore4Enterprise.Models;
 
 namespace DXdotNetCore4Enterprise.Controllers
 {
@@ -12,7 +13,8 @@ namespace DXdotNetCore4Enterprise.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model = StaticHomeData.Data;
+            return View(model);
         }
 
         public IActionResult About()

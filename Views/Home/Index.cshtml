@@ -1,4 +1,5 @@
-﻿@{
+﻿@model DXdotNETCore4Enterprise.Models.HomeModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -66,7 +67,18 @@
 </div>
 
 <div class="row">
-    <div class="col-md-3">
+    @foreach (var column in Model.ContentBlocks)
+    {
+        <div class="@column.CssClass">
+            <h2>@column.Title</h2>
+            <ul>
+                @foreach(var item in column.Items){
+                    <li>@Html.Raw(item.Text)</li>           
+                }
+            </ul>
+        </div>
+    }
+    @*<div class="col-md-3">
         <h2>Application uses</h2>
         <ul>
             <li>Sample pages using ASP.NET Core MVC</li>
@@ -102,5 +114,5 @@
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
             <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
         </ul>
-    </div>
+    </div>*@
 </div>

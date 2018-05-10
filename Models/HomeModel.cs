@@ -3,7 +3,7 @@ using System.Collections.Generic;
 namespace DXdotNETCore4Enterprise.Models{
     
     public static class StaticHomeData {
-        public static HomeModel Data = new HomeModel()
+        public readonly static HomeModel Data = new HomeModel()
         {
             ContentBlocks = new HomeColumn[] {
                 new HomeColumn("Application uses", "col-md-3", new HomeText[] {

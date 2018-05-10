@@ -10,3 +10,4 @@ C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.A
 C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.AssemblyInfo.cs
 C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.dll
 C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.pdb
+C:\git\DXdotNetCore4Enterprise\obj\Debug\netcoreapp2.0\DXdotNetCore4Enterprise.csprojAssemblyReference.cache
