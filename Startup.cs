@@ -38,7 +38,7 @@ namespace DXdotNetCore4Enterprise
                 facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
                 facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
             });
-
+            
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "96d964db9736f5516afaf64d3f7faffb3db136eb"
+    "signature": "2a8b087b42ea67699dd95c02155c429a2782956d"
   },
   "compilationOptions": {
     "defines": [
@@ -23,16 +23,49 @@
     ".NETCoreApp,Version=v2.0": {
       "DXdotNetCore4Enterprise/1.0.0": {
         "dependencies": {
+          "DevExtreme.AspNet.Core": "17.2.7",
+          "DevExtreme.AspNet.Data": "1.4.5",
           "Microsoft.AspNetCore.All": "2.0.7",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.2",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
+          "Twilio": "5.12.1"
         },
         "runtime": {
           "DXdotNetCore4Enterprise.dll": {}
         },
         "compile": {
           "DXdotNetCore4Enterprise.dll": {}
+        }
+      },
+      "DevExtreme.AspNet.Core/17.2.7": {
+        "dependencies": {
+          "DevExtreme.AspNet.Data": "1.4.5",
+          "Microsoft.AspNetCore.Mvc": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.6/DevExtreme.AspNet.Core.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/DevExtreme.AspNet.Core.dll": {}
+        }
+      },
+      "DevExtreme.AspNet.Data/1.4.5": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "Newtonsoft.Json": "10.0.1",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.Linq.Queryable": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/DevExtreme.AspNet.Data.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.0/DevExtreme.AspNet.Data.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4040,6 +4073,22 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "Twilio/5.12.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "1.1.4",
+          "Microsoft.IdentityModel.Tokens": "5.1.4",
+          "NETStandard.Library": "2.0.0",
+          "Newtonsoft.Json": "10.0.1",
+          "System.Collections.Specialized": "4.3.0",
+          "System.IdentityModel.Tokens.Jwt": "5.1.4"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Twilio.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.4/Twilio.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "dependencies": {
           "Microsoft.Data.OData": "5.8.2",
@@ -4237,6 +4286,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DevExtreme.AspNet.Core/17.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5TZKqMc1ZeHL0aLs1Wqy1bqNT6aEH81lUUTcLDPk8b7JGh8o34xVJ/M+tkokyIG6EX3FN4EIwKo/vXGY2COOBA==",
+      "path": "devextreme.aspnet.core/17.2.7",
+      "hashPath": "devextreme.aspnet.core.17.2.7.nupkg.sha512"
+    },
+    "DevExtreme.AspNet.Data/1.4.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-owofT3kexJ1/+spQu+a5w354uweU3w3Q5m1o1cEGHUthasFzk3I4TE1Zd2ghoU9fRjuLRkUNxbox5n5Q9XSoSg==",
+      "path": "devextreme.aspnet.data/1.4.5",
+      "hashPath": "devextreme.aspnet.data.1.4.5.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -6358,6 +6421,13 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Twilio/5.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z9I/mjEeDEBTKnf5REByFHvUze/6pdTPG+idb4BTB7ELpuY1n8kXkr7sjsbN7UdyEEZZBZ5GtZSKT+0nCag3ww==",
+      "path": "twilio/5.12.1",
+      "hashPath": "twilio.5.12.1.nupkg.sha512"
     },
     "WindowsAzure.Storage/8.1.4": {
       "type": "package",

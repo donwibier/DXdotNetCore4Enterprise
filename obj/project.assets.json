@@ -2,6 +2,38 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "DevExtreme.AspNet.Core/17.2.7": {
+        "type": "package",
+        "dependencies": {
+          "DevExtreme.AspNet.Data": "1.0.0",
+          "Microsoft.AspNetCore.Mvc": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/DevExtreme.AspNet.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/DevExtreme.AspNet.Core.dll": {}
+        }
+      },
+      "DevExtreme.AspNet.Data/1.4.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0",
+          "Newtonsoft.Json": "5.0.1",
+          "System.ComponentModel.TypeConverter": "4.0.0",
+          "System.Dynamic.Runtime": "4.0.0",
+          "System.Linq.Expressions": "4.0.10",
+          "System.Linq.Queryable": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Text.RegularExpressions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/DevExtreme.AspNet.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/DevExtreme.AspNet.Data.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5014,6 +5046,23 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Twilio/5.12.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "1.1.2",
+          "Microsoft.IdentityModel.Tokens": "5.1.2",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Collections.Specialized": "4.3.0",
+          "System.IdentityModel.Tokens.Jwt": "5.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.4/Twilio.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Twilio.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "type": "package",
         "dependencies": {
@@ -5032,6 +5081,32 @@
     }
   },
   "libraries": {
+    "DevExtreme.AspNet.Core/17.2.7": {
+      "sha512": "5TZKqMc1ZeHL0aLs1Wqy1bqNT6aEH81lUUTcLDPk8b7JGh8o34xVJ/M+tkokyIG6EX3FN4EIwKo/vXGY2COOBA==",
+      "type": "package",
+      "path": "devextreme.aspnet.core/17.2.7",
+      "files": [
+        "devextreme.aspnet.core.17.2.7.nupkg.sha512",
+        "devextreme.aspnet.core.nuspec",
+        "lib/net451/DevExtreme.AspNet.Core.dll",
+        "lib/net451/DevExtreme.AspNet.Core.xml",
+        "lib/netstandard1.6/DevExtreme.AspNet.Core.dll",
+        "lib/netstandard1.6/DevExtreme.AspNet.Core.xml"
+      ]
+    },
+    "DevExtreme.AspNet.Data/1.4.5": {
+      "sha512": "owofT3kexJ1/+spQu+a5w354uweU3w3Q5m1o1cEGHUthasFzk3I4TE1Zd2ghoU9fRjuLRkUNxbox5n5Q9XSoSg==",
+      "type": "package",
+      "path": "devextreme.aspnet.data/1.4.5",
+      "files": [
+        "devextreme.aspnet.data.1.4.5.nupkg.sha512",
+        "devextreme.aspnet.data.nuspec",
+        "lib/net40/DevExtreme.AspNet.Data.dll",
+        "lib/net40/DevExtreme.AspNet.Data.xml",
+        "lib/netstandard1.0/DevExtreme.AspNet.Data.dll",
+        "lib/netstandard1.0/DevExtreme.AspNet.Data.xml"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -13094,6 +13169,21 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Twilio/5.12.1": {
+      "sha512": "z9I/mjEeDEBTKnf5REByFHvUze/6pdTPG+idb4BTB7ELpuY1n8kXkr7sjsbN7UdyEEZZBZ5GtZSKT+0nCag3ww==",
+      "type": "package",
+      "path": "twilio/5.12.1",
+      "files": [
+        "lib/net35/Twilio.dll",
+        "lib/net35/Twilio.xml",
+        "lib/net451/Twilio.dll",
+        "lib/net451/Twilio.xml",
+        "lib/netstandard1.4/Twilio.dll",
+        "lib/netstandard1.4/Twilio.xml",
+        "twilio.5.12.1.nupkg.sha512",
+        "twilio.nuspec"
+      ]
+    },
     "WindowsAzure.Storage/8.1.4": {
       "sha512": "W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "type": "package",
@@ -13119,10 +13209,13 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "DevExtreme.AspNet.Core >= 17.2.7",
+      "DevExtreme.AspNet.Data >= 1.4.5",
       "Microsoft.AspNetCore.All >= 2.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.2",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
+      "Twilio >= 5.12.1"
     ]
   },
   "packageFolders": {
@@ -13132,11 +13225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\DXdotNetCore4Enterprise\\DXdotNetCore4Enterprise.csproj",
+      "projectUniqueName": "c:\\git\\DXdotNetCore4Enterprise\\DXdotNetCore4Enterprise.csproj",
       "projectName": "DXdotNetCore4Enterprise",
-      "projectPath": "C:\\git\\DXdotNetCore4Enterprise\\DXdotNetCore4Enterprise.csproj",
+      "projectPath": "c:\\git\\DXdotNetCore4Enterprise\\DXdotNetCore4Enterprise.csproj",
       "packagesPath": "C:\\Users\\Don Wibier\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\DXdotNetCore4Enterprise\\obj\\",
+      "outputPath": "c:\\git\\DXdotNetCore4Enterprise\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13169,6 +13262,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "DevExtreme.AspNet.Core": {
+            "target": "Package",
+            "version": "[17.2.7, )"
+          },
+          "DevExtreme.AspNet.Data": {
+            "target": "Package",
+            "version": "[1.4.5, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.7, )"
@@ -13187,6 +13288,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.3, )"
+          },
+          "Twilio": {
+            "target": "Package",
+            "version": "[5.12.1, )"
           }
         },
         "imports": [
